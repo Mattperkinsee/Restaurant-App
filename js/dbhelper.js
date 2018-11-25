@@ -1,6 +1,22 @@
 /**
  * Common database helper functions.
  */
+ 
+//Register service worker//
+ if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+        .register("./serviceworker.js", {
+            scope: ""
+        })
+        .then(function(reg) {
+            //registration successful
+            console.log("Service Worker registered for" + reg.scope);
+        }).catch(function(error) {
+            //registration unsuccessful
+            console.log("Registration failed to register, " + error);
+        });
+}
+
 class DBHelper {
 
   /**

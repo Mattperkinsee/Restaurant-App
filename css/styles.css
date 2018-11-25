@@ -101,6 +101,7 @@ nav h1 a {
 #map {
   height: 400px;
   width: 100%;
+  margin:auto;
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
@@ -312,6 +313,16 @@ nav h1 a {
 #restaurants-list li a:hover{
   background-color:#3397DB;
 }
+.iconOutline{
+   fill: #3397DB;
+}
+.icon{
+  fill:#3397DB;
+}
+.fork, .spoon{
+  fill:#fff;
+}
+
 /*media queries*/
 @media screen and (min-width: 800px){
   .filter-options select{
@@ -320,9 +331,16 @@ nav h1 a {
   #restaurants-list li{
     width:27%;
   }
+  #map{
+    width:60%;
+  }
   nav h1 a{
     font-size:32pt;
 
+  }
+  body{
+    
+    margin:auto;
   }
   
 }

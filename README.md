@@ -18,5 +18,5 @@ Fork this respository, then clone it to your local machine. Create a simple HTTP
 
 Once the server is up and running, navigate to `localhost:8000` to see the app in action!
 
-View the demo here. [Restaurant Review App](https://mattperkins.gearedwebdesigns.com/Restaurant-App/)
+View the demo here. [Restaurant Review App](https://www.themattperkins.com/Restaurant-App/)
 

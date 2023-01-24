@@ -77,13 +77,15 @@ initMap = () => {
         zoom: 12,
         scrollWheelZoom: false
       });
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: 'pk.eyJ1Ijoic2hldmFuZWx0YWtldHdvIiwiYSI6ImNqb2ZpeHZhbzA0dWkzdnBubGppZ2hueXgifQ.fcO37xfDBmhLKsLkqAJBjg',
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    id: 'mapbox.streets'
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={mapboxToken}', {
+        mapboxToken: 'pk.eyJ1Ijoic2hldmFuZWx0YWtldHdvIiwiYSI6ImNsZGFuczdudzBieGUzb3A2dWx5N2RpM3kifQ.jTlMj-NuKxPmnYEmbAJWPw',
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        tileSize: 512,
+        zoomOffset: -1,
+        id: 'mapbox/streets-v12', 
   }).addTo(newMap);
 
   updateRestaurants();
